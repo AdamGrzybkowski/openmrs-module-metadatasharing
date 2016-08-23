@@ -4,7 +4,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>metadatasharing</artifactId>
-	<version>1.2.1-SNAPSHOT</version>
+	<version>1.2.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Metadata Sharing Module</name>
 	<description>Allows all kinds of metadata (concepts, locations, roles, etc.) to be exchanged between different OpenMRS installations.</description>
@@ -89,7 +89,7 @@
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>metadatamapping-api</artifactId>
-				<version>1.0.1</version>
+				<version>1.1.0-alpha1</version>
 				<type>jar</type>
 				<scope>provided</scope>
 			</dependency>
@@ -243,6 +243,9 @@
 								<goals>
 									<goal>jar</goal>
 								</goals>
+								<configuration>
+						            <failOnError>false</failOnError>
+						        </configuration>
 							</execution>
 						</executions>
 					</plugin>
@@ -364,7 +367,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-release-plugin</artifactId>
-					<version>2.3.2</version>
+					<version>2.5</version>
 					<configuration>
 						<useReleaseProfile>false</useReleaseProfile>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
